@@ -12,7 +12,7 @@ Each participant will have their own main branch following the naming convention
 - Lucas will have a main branch called `branch-lucas-main`.
 
 ### Challenge Branch
-For each challenge, you will create a specific branch following the naming convention: `leet-yourname-challenge`.
+For each challenge, you will create a specific branch following the naming convention: `leet-challenge-yourname`.
 
 **Example:**
 - For a to-do list challenge, Ash will create the branch `leet-ash-to-do-list`.
