@@ -51,6 +51,10 @@ const Search = ({ setPokemonData }) => {
         image: data.sprites.front_default,
         height: data.height / 10,
         weight: data.weight / 10,
+        moves: data.moves
+          .slice(0, 2)
+          .map((move) => capitalizeFirstLetter(move.move.name))
+          .join(", "),
       });
     } catch (error) {
       console.error("Error fetching Pokémon data:", error);

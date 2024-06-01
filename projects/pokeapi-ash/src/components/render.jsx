@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import defaultBg from "../poke-bgs/normal.png";
-const Render = ({ name, types, image, height, weight }) => {
+const Render = ({ name, types, image, height, weight, moves }) => {
   const [description, setDescription] = useState("Loading...");
   const [bgImage, setBgImage] = useState(null);
 
@@ -56,6 +56,10 @@ const Render = ({ name, types, image, height, weight }) => {
           <div id="pokeDescription">
             <h3>Description:</h3>
             <p>{description}</p>
+          </div>
+          <div id="pokeMoves">
+            <h3>Moves:</h3>
+            <p>{moves}</p>
           </div>
         </div>
       </div>
