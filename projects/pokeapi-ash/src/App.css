@@ -80,7 +80,7 @@ body {
 }
 
 .search-container input::placeholder {
-  color: #888; /* Grey placeholder text */
+  color: #888;
 }
 .favorite-link {
   text-decoration: none;
@@ -99,10 +99,25 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border: 5px;
 }
+
+#pokeDataHolder {
+  margin-top: 14%;
+}
+#pokeImage {
+  width: 40%;
+  image-rendering: pixelated;
+  margin-bottom: -4%;
+}
+#pokeHW {
+  display: flex;
+  justify-content: center;
+}
 #renderDiv {
   width: 50%;
-  background-color: white;
-  color: #000;
+  text-align: center;
+  background-color: #e44444;
+  color: #ffffff;
+  justify-content: center;
 }
 .results-container {
   display: flex;
