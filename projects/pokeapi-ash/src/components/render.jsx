@@ -11,9 +11,9 @@ const Render = ({ name, types, image, height, weight, moves }) => {
         let apiUrl;
         if (name.includes("-mega") || name.includes("-gmax")) {
           const baseName = name.split("-")[0];
-          apiUrl = `https://pokeapi.co/api/v2/pokemon-species/${baseName}`;
+          apiUrl = `${process.env.REACT_APP_API_URL}pokemon-species/${baseName}`;
         } else {
-          apiUrl = `https://pokeapi.co/api/v2/pokemon-species/${name}`;
+          apiUrl = `${process.env.REACT_APP_API_URL}pokemon-species/${name}`;
         }
         const response = await fetch(apiUrl);
         if (!response.ok) {
