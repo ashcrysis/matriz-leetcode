@@ -55,11 +55,7 @@ body {
   display: flex;
   justify-content: center;
 }
-#searchholder {
-  background-color: #761919;
-  height: 110px;
-  display: flexbox;
-}
+
 .search-container input {
   padding: 8px 20px;
   font-size: 30px;
@@ -95,13 +91,14 @@ body {
   display: flex;
 }
 #pokediv {
-  width: 50%;
+  width: 70%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border: 5px;
 }
 
 #pokeDataHolder {
   margin-top: 14%;
+  margin-right: 20%;
 }
 #pokeImage {
   width: 40%;
@@ -113,7 +110,7 @@ body {
   justify-content: center;
 }
 #renderDiv {
-  width: 50%;
+  width: 30%;
   text-align: center;
   background-color: #e44444;
   color: #ffffff;
@@ -121,7 +118,6 @@ body {
 }
 .results-container {
   display: flex;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
   width: 100%;
   padding: 1.8%;
