@@ -1,0 +1,132 @@
+body {
+  background-color: #e44444;
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 8%;
+}
+
+.search-container input {
+  padding: 8px 20px;
+  font-size: 30px;
+  margin-top: 4%;
+  width: 75%;
+  color: #fff;
+  background-color: #3d1212;
+  border: 2px solid #444;
+  border-radius: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input:focus {
+  border-color: #fde402;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+.search-container input::placeholder {
+  color: #888;
+}
+.favorite-link {
+  text-decoration: none;
+}
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-decoration: none;
+}
+.App {
+  display: flex;
+}
+#pokediv {
+  width: 70%;
+}
+
+#pokeDataHolder {
+  margin-top: 14%;
+  margin-right: 20%;
+}
+#pokebg {
+  width: 90%;
+  border: 5px;
+  image-rendering: pixelated;
+  margin-bottom: -20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#typepoke {
+  margin-top: 20%;
+}
+#pokeImage {
+  width: 50%;
+  image-rendering: pixelated;
+  margin-bottom: -5%;
+  margin-top: -60%;
+}
+#pokeHW {
+  display: flex;
+  justify-content: center;
+}
+#renderDiv {
+  width: 30%;
+  text-align: center;
+  background-color: #e44444;
+  color: #ffffff;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 70%;
+}
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1.8%;
+}
+.pokeball-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("./Pokeball.png");
+  background-size: cover;
+  opacity: 0.5;
+  transition: transform 0.5s ease;
+}
+.card:hover > .pokeball-icon {
+  animation: spin 1s infinite linear;
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  width: 14%;
+  height: 10%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.card h2 {
+  font-size: 100%;
+}
+.card img {
+  max-width: 100px;
+}
