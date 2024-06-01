@@ -24,3 +24,11 @@ For each challenge, you will create a specific branch following the naming conve
 - After that, they should create a branch based on their main, following the pattern `leet-challenge-yourname`, and within it, follow the structure: `projects > current project`.
 - The participant will send commits with updates (do not send everything at once to AVOID sending project files for PR review).
 - After finishing, open the PR to your own main branch and request approval from at least 3 people.
+
+## Creating PRS, Reviewing PRs
+The convention name for your Pull Request should be something like `Leet #task-name | Your-Name -> PR #PullVersion`, for example -> `Leet #to-do | Ash -> PR #0`  
+And remember the following rules:
+- Your PR WILL be cancelled if  you try to merge into the project main directory, you have to make your PR's into your main directory => `branch-yourname-main`.
+- When reviewing a Pull Request, try to give tips of where to improve, or things we could do better, but don't be a jerk, only comment useful things to improvement, and approve the PR when you find it is okay.
+- Remember to make a nice description on each PR, explaining what you are merging, what you have done and why you have done, explain how to run the project, etc.
+- Your PR must have `@ashcrysis` and `@j0jds` as a reviewer, the third one can be anyone, feel free to choose.
